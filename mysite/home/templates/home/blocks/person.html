@@ -1,0 +1,7 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="person">
+    {% image value.photo width-400 %}
+    <h2>{% include_block value.first_name %} {% include_block value.surname %}</h2>
+    {% include_block value.biography %}
+</div>

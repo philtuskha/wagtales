@@ -1,0 +1,9 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+<h1>{% include_block value.thirds_heading %}</h1>
+<div class="thirds row">
+	
+   <div class="col-sm-4">{% include_block value.one_of_three.0 %}</div>
+   <div class="col-sm-4">{% include_block value.two_of_three.0 %}</div>
+   <div class="col-sm-4">{% include_block value.three_of_three.0 %}</div>
+
+</div>

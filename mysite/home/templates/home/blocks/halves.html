@@ -1,0 +1,15 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="halves row">
+	<div class="col-sm-6">
+		{% image value.one_of_two.photo width-100 %}
+    	<h2>{% include_block value.one_of_two.title %}</h2>
+    	<p>{% include_block value.one_of_two.text %}</p>
+	</div>
+	<div class="col-sm-6">
+		{% image value.two_of_two.photo width-100 %}
+    	<h2>{% include_block value.two_of_two.title %}</h2>
+    	<p>{% include_block value.two_of_two.text %}</p>
+	</div>
+    
+</div>

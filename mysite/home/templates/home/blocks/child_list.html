@@ -1,0 +1,18 @@
+{% load wagtailcore_tags wag_tags %}
+
+<div class="child-page">
+	<ul class="child-page-list">
+	<!-- page.get_descendants line #1300 in wagtail.wagtailcore.models.py within the Page model -->
+	{% for kid in page.get_descendants %}
+		<li>
+			<a href="{{ kid.url }}">{{ kid.title }}</a>
+			<p>
+				Need to figure out the best way to grab content (a featured image, snippet, title) from this 	child page.    
+			</p>	
+			<p>
+				{% check_object obj=kid %}
+			</p>	
+		</li>
+	{% endfor%}
+	</ul>
+</div>

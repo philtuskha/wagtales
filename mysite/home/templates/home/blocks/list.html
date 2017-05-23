@@ -1,0 +1,10 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<div class="list row">
+	{% for item in value.list_item %}
+	<ul>
+	   <li>{% include_block item.ingredient %}</li>
+	   <li>{% include_block item.amount %}</li>
+	</ul>
+    {% endfor %}
+</div>
